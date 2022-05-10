@@ -2,11 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
-    return '<h1>Minha primeira rota!</h1>'
+  return '<h1>Olá Mundo!</h1>'
 
+@app.route('/unifran')
+def Unifra():
+  return '<h2>Universidade de Franca</h2>'
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+  app.run(host='0.0.0.0')
